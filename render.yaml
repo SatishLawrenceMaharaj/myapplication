@@ -1,0 +1,8 @@
+version: 1
+services:
+  - name: web
+    plan: web
+    buildCommand: "composer install --no-dev"
+    env:
+      - key: RENDER_RUNTIME
+        value: php82
