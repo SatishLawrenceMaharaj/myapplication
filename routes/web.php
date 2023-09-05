@@ -34,6 +34,3 @@ Route::post('/login', [UserController::class, 'login']);
 //post routes
 Route::post('/create-post', [PostController::class, 'createPost']);
 Route::delete('/delete/post/{post}', [PostController::class, 'deletePost']);
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
